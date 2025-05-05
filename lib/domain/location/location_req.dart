@@ -8,7 +8,7 @@ abstract class LocationReq with _$LocationReq {
     List<dynamic> query,
     ProvinceStatusData status,
     List<ProvinceData> results,
-  ) = _ProvinceResponse;
+  ) = ProvinceResponse;
 
   factory LocationReq.fromJson(Map<String, dynamic> json) =>
       _$LocationReqFromJson(json);

@@ -13,7 +13,7 @@ part of 'location_req.dart';
 // dart format off
 T _$identity<T>(T value) => value;
 LocationReq _$LocationReqFromJson(Map<String, dynamic> json) {
-  return _ProvinceResponse.fromJson(json);
+  return ProvinceResponse.fromJson(json);
 }
 
 /// @nodoc
@@ -103,12 +103,12 @@ class _$LocationReqCopyWithImpl<$Res> implements $LocationReqCopyWith<$Res> {
 
 /// @nodoc
 @JsonSerializable()
-class _ProvinceResponse implements LocationReq {
-  _ProvinceResponse(
+class ProvinceResponse implements LocationReq {
+  ProvinceResponse(
       final List<dynamic> query, this.status, final List<ProvinceData> results)
       : _query = query,
         _results = results;
-  factory _ProvinceResponse.fromJson(Map<String, dynamic> json) =>
+  factory ProvinceResponse.fromJson(Map<String, dynamic> json) =>
       _$ProvinceResponseFromJson(json);
 
   final List<dynamic> _query;
@@ -134,8 +134,8 @@ class _ProvinceResponse implements LocationReq {
   @override
   @JsonKey(includeFromJson: false, includeToJson: false)
   @pragma('vm:prefer-inline')
-  _$ProvinceResponseCopyWith<_ProvinceResponse> get copyWith =>
-      __$ProvinceResponseCopyWithImpl<_ProvinceResponse>(this, _$identity);
+  $ProvinceResponseCopyWith<ProvinceResponse> get copyWith =>
+      _$ProvinceResponseCopyWithImpl<ProvinceResponse>(this, _$identity);
 
   @override
   Map<String, dynamic> toJson() {
@@ -148,7 +148,7 @@ class _ProvinceResponse implements LocationReq {
   bool operator ==(Object other) {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
-            other is _ProvinceResponse &&
+            other is ProvinceResponse &&
             const DeepCollectionEquality().equals(other._query, _query) &&
             const DeepCollectionEquality().equals(other.status, status) &&
             const DeepCollectionEquality().equals(other._results, _results));
@@ -169,11 +169,11 @@ class _ProvinceResponse implements LocationReq {
 }
 
 /// @nodoc
-abstract mixin class _$ProvinceResponseCopyWith<$Res>
+abstract mixin class $ProvinceResponseCopyWith<$Res>
     implements $LocationReqCopyWith<$Res> {
-  factory _$ProvinceResponseCopyWith(
-          _ProvinceResponse value, $Res Function(_ProvinceResponse) _then) =
-      __$ProvinceResponseCopyWithImpl;
+  factory $ProvinceResponseCopyWith(
+          ProvinceResponse value, $Res Function(ProvinceResponse) _then) =
+      _$ProvinceResponseCopyWithImpl;
   @override
   @useResult
   $Res call(
@@ -183,12 +183,12 @@ abstract mixin class _$ProvinceResponseCopyWith<$Res>
 }
 
 /// @nodoc
-class __$ProvinceResponseCopyWithImpl<$Res>
-    implements _$ProvinceResponseCopyWith<$Res> {
-  __$ProvinceResponseCopyWithImpl(this._self, this._then);
+class _$ProvinceResponseCopyWithImpl<$Res>
+    implements $ProvinceResponseCopyWith<$Res> {
+  _$ProvinceResponseCopyWithImpl(this._self, this._then);
 
-  final _ProvinceResponse _self;
-  final $Res Function(_ProvinceResponse) _then;
+  final ProvinceResponse _self;
+  final $Res Function(ProvinceResponse) _then;
 
   /// Create a copy of LocationReq
   /// with the given fields replaced by the non-null parameter values.
@@ -199,7 +199,7 @@ class __$ProvinceResponseCopyWithImpl<$Res>
     Object? status = freezed,
     Object? results = null,
   }) {
-    return _then(_ProvinceResponse(
+    return _then(ProvinceResponse(
       null == query
           ? _self._query
           : query // ignore: cast_nullable_to_non_nullable

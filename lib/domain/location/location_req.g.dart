@@ -6,8 +6,8 @@ part of 'location_req.dart';
 // JsonSerializableGenerator
 // **************************************************************************
 
-_ProvinceResponse _$ProvinceResponseFromJson(Map<String, dynamic> json) =>
-    _ProvinceResponse(
+ProvinceResponse _$ProvinceResponseFromJson(Map<String, dynamic> json) =>
+    ProvinceResponse(
       json['query'] as List<dynamic>,
       ProvinceStatusData.fromJson(json['status'] as Map<String, dynamic>),
       (json['results'] as List<dynamic>)
@@ -15,7 +15,7 @@ _ProvinceResponse _$ProvinceResponseFromJson(Map<String, dynamic> json) =>
           .toList(),
     );
 
-Map<String, dynamic> _$ProvinceResponseToJson(_ProvinceResponse instance) =>
+Map<String, dynamic> _$ProvinceResponseToJson(ProvinceResponse instance) =>
     <String, dynamic>{
       'query': instance.query,
       'status': instance.status,

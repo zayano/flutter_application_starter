@@ -1,6 +1,8 @@
 import 'package:flutter_application_starter/h.dart';
 
 class HomePage extends StatefulWidget {
+  static final String TAG = '/';
+
   const HomePage({super.key});
 
   @override

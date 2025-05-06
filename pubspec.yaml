@@ -6,34 +6,29 @@ publish_to: "none"
 version: 1.0.0+1
 
 environment:
-  sdk: ^3.6.1
+  sdk: ">=3.0.0 <4.0.0"
 
 dependencies:
-  another_flushbar: ^1.12.30
-  auto_route: ^10.0.1
-  bloc: ^9.0.0
-  cupertino_icons: ^1.0.8
-  dartz: ^0.10.1
-  dio: ^5.8.0+1
   flutter:
     sdk: flutter
+  bloc: ^9.0.0
+  cupertino_icons: ^1.0.2
+  dartz: ^0.10.0-nullsafety.2
+  dio: ^5.8.0+1
   flutter_bloc: ^9.1.1
-  freezed_annotation: ^3.0.0
-  get: ^4.7.2
+  freezed_annotation: ^2.4.1
+  get: ^4.1.4
   get_it: ^8.0.3
   injectable: ^2.5.0
   injectable_generator: ^2.7.0
   json_annotation: ^4.9.0
 
 dev_dependencies:
-  auto_route_generator: ^10.0.1
-  build_runner: ^2.4.15
-  flutter_launcher_icons: ^0.14.3
-  flutter_lints: ^5.0.0
   flutter_test:
     sdk: flutter
-  freezed: ^3.0.6
-  json_serializable: ^6.9.5
+  build_runner: ^2.4.6
+  freezed: ^2.4.5
+  json_serializable: ^6.7.1
 
 flutter:
   uses-material-design: true

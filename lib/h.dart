@@ -8,9 +8,9 @@ export 'package:flutter_application_starter/presentation/app_widget.dart';
 export 'package:flutter_application_starter/presentation/home/home_page.dart';
 
 // Domain
-export 'package:flutter_application_starter/domain/location/province_data.dart';
-export 'package:flutter_application_starter/domain/location/location_interface.dart';
-export 'package:flutter_application_starter/domain/location/location_req.dart';
+// export 'package:flutter_application_starter/domain/location/province_data.dart';
+// export 'package:flutter_application_starter/domain/location/location_interface.dart';
+// export 'package:flutter_application_starter/domain/location/location_req.dart';
 
 // routes
 export 'package:flutter_application_starter/routes/routes.dart';
